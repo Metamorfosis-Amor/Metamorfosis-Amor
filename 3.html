@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Campaña</title>
+</head>
+<body>
+    
+  <div class="nav">
+    <div class="logo">
+        <img src="img/logo.svg" alt="" class="logo" width="80">
+    </div>
+
+    <nav>
+        <ul>
+            <a href="#" class="nav-button" onclick="accion()"><i class="fas fa-bars fa-2x"></i></a>
+            <a href="index.html" class="nav_enlace desaparecer">Menú</a>
+            <a href="dos.html" class="nav_enlace desaparecer"><i class="fa-solid fa-face-smile"></i>Niños</a>
+            <a href="3.html" class="nav_enlace active desaparecer">Campaña</a>
+            <a href="#" class="cta desaparecer">Usuario</a>
+        </ul>
+    </nav>
+    
+</div>
+        
+    </div>
+
+    <div class="modal-container">
+        <div class="modal modal-close">
+            <p class="close">X</p>
+            <img src="img/undraw_reading_time_re_phf7.svg" alt="" class="img_close">
+
+
+            <div class="formulario">
+                <form>
+                    <input type="text" id="name" class="form_input" placeholder="Usuario">
+                    <label for="name" class="form_label"></label>
+                    <span class="form_line"></span>
+                  </form>
+
+                  <form>
+                    <input type="password" id="name" class="form_input" placeholder="Contraseña">
+                    <label for="password" class="form_label"></label>
+                    <span class="form_line"></span>
+                  </form>
+                  
+            </div>
+            <button><a href="">Enviar</a></button>
+        </div>
+    </div>
+
+
+
+<div class="container3-1">
+          <div class="texto3-1">
+            <div class="texto3-title">
+              <h2>No</h2>
+              <h3>Al maltrato infantil</h3>
+            </div>
+          <p>Es inmoral y es delito, hay otras muchas razones por las que nunca (jamás) debes pegarle a un niño. No importa cuál fue su comportamiento ni el nivel estrés de la situación, pegar nunca será una opción. Muchos padres frustrados recurren a darles cachetes o nalgadas a sus hijos pensando que de ése modo aprenderán, cuando la realidad es que sólo están cultivando una semilla de odio y rencor.
+          </p>
+          </div>
+
+      
+
+          <div class="icon">
+            <a class="cte" id="clip"><i class="fa-solid fa-circle-play fa-5x"></i></a>
+        </div>
+
+      </div>
+
+        <div class="fondo_transparente">
+            <div class="modal">
+                <div class="modal_cerrar">
+                    <span>x</span>
+                </div>
+                
+          <div>
+            <iframe src="https://www.youtube.com/embed/-YSsit8r42w" width="100%" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+      </div>
+  </div>
+    
+<!--INICIO DE VENTANA MODAL-->
+
+
+  <style>
+
+      iframe{
+        height: 320px;
+      }
+      .fondo_transparente{
+          top: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.226);
+          position: absolute;
+          height: 100vh;
+          width: 100%;
+          display: none;
+      }
+      .modal{
+          background: transparent;
+          width: 600px;
+          height: 300px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+      }
+      .modal_cerrar{
+          background: white;
+          position: absolute;
+          right: -20px;
+          color: crimson;
+          top: -20px;
+          width: 40px;
+          height: 40px;
+          border-radius: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+      }
+
+      @media screen and (max-width:576px){
+
+        iframe{
+        height: 280px;
+      }
+
+        .modal{
+          background: transparent;
+          width: 400px;
+          height: auto;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+      }
+      .modal_cerrar{
+          background: white;
+          position: absolute;
+          right: -20px;
+          color: crimson;
+          top: -20px;
+          width: 40px;
+          height: 40px;
+          border-radius: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+      }
+      }
+
+
+      
+          
+  </style>
+<script>
+  document.getElementById("clip").addEventListener("click",function(){
+     document.getElementsByClassName("fondo_transparente")[0].style.display="block" 
+     return false
+  })
+  document.getElementsByClassName("modal_cerrar")[0].addEventListener("click",function(){
+      document.getElementsByClassName("fondo_transparente")[0].style.display="none" 
+  })
+</script>
+  
+<!--FIN DE VENTANA MODAL CON VIDEO-->
+  
+</div>
+
+<!-- <div class="container3-2">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sequi qui veniam, cum odit, consectetur quidem quos dolore eos deleniti dolorem corporis consequatur illum. Iste exercitationem quia nesciunt excepturi odio?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus quaerat ipsa consequatur in impedit fugiat voluptatum doloremque officiis deleniti neque, dolorum voluptas tempore obcaecati sed sapiente et harum nostrum.</p>
+</div> -->
+
+
+<div class="silder-3">
+
+  <h4>La Letra con Sangre, No Entra</h4>
+  <div class="container-silder">
+    <div class="card-carousel">
+      <div class="card" id="1">
+        <div class="image-container"></div>
+        <p>Prohibido Castigar con Golpes</p>
+      </div>
+      <div class="card" id="2">
+        <div class="image-container"></div>
+        <p>Prohibido Castigar con Golpes</p>
+      </div>
+      <div class="card" id="3">
+        <div class="image-container"></div>
+        <p>Prohibido Castigar con la comida</p>
+      </div>  
+      <div class="card" id="4">
+        <div class="image-container"></div>
+        <p>Prohibido Castigar con Encerralos</p>
+      </div>
+      <div class="card" id="5">
+        <div class="image-container"></div>
+        <p>Prohibido Castigar con Amenzas</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container3-all">
+  <div class="title3-3"> <h2>EDUCA CON DISIPLINA</h2></div>
+  <div class="container3-3">
+    
+  
+    <p>Independientemente de la edad que tenga su hijo, es importante que usted sea coherente al impartirle disciplina. Si los padres no respetan las normas fijadas ni aplican a las consecuencias enunciadas, lo más probable es que tampoco lo hagan sus hijos.</p>
+    <p>Cuando decimos CERO GOLPES la gente escucha:
+      Cero normas, Perder la autoridad y dejar de educarlos, Falta de consecuencias,Permisividad absoluta, Dejarlos hacer lo que quieran
+      TODO ESTO ES SIMPLEMENTE UNA GRAN MALENTENDIDO.
+      </p>
+  
+    <p>Cuando decimos CERO GOLPES, no estamos diciendo CERO NORMAS.
+      Eliminar los castigos, dejar de violentar, agredir o amenazar a un bebe o niño no quiere decir DEJAR DE EDUCAR. Cuando decimos CERO GOLPES estamos proponiendo una NUEVA FORMA DE ESTABLECER LÍMITES.</p>
+    
+  </div>
+</div>
+
+
+<footer>
+  <div class="foter">
+      <p class="parrafo"> Metamorfosis Desde el Amor</p>
+
+  <div class="paraf">
+      <div class="noso">
+          <h5>Sobre Nosotros</h5>
+          <p>Somos un Grupo de personas, que promovemos la transformacion de la educación y la forma de disiplinar a los hijo basada en el amor.</p>
+      </div>
+  
+      <div class="noso">
+          <h5>Visión</h5>
+          <p>Promover metodos de educación y crianza positiva para mejorar el desarrollo fisico emocional e intelectual de los niños</p>
+      </div>
+  
+      <div class="noso">
+          <h5>Misión</h5>
+          <p>Educar a las nuevas generaciones cambiando el metodo de enseñanza para lograr poco a poco mejores seres humnanos en el futuro</p>
+      </div>
+  
+  </div>
+  
+  <div class="redes">
+          <li>
+              <i class="fa-brands fa-whatsapp fa-2x"></i>
+              <a href="img/facebook.png">3204006322</a>
+             </li>
+          <li>
+              <i class="fa-brands fa-instagram fa-2x"></i>
+              <a href="#">@marlyyyy</a>
+          </li>
+          
+          <li>
+              <i class="fa-brands fa-facebook fa-2x"></i>
+              <a href="#">Facebook</a></li>
+          <li>
+              <i class="fa-brands fa-twitter fa-2x"></i>
+              <a href="#">Twiter</a>
+          </li>
+  </div>
+  </div>
+</footer>
+
+
+
+<script src="https://kit.fontawesome.com/74474f37e0.js" crossorigin="anonymous"></script>
+<script src="js/personal.js"></script>
+</body>
+</html>
